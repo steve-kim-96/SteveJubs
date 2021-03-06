@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout'
-import PageList from '../../components/PageList/index'
+import PageList from '../../components/DeveloperPageList'
 import DeveloperListItem from '../../lib/data/developerListItem'
 import React from 'react'
 

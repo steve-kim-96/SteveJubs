@@ -1,5 +1,6 @@
 import PageListItem from '../../lib/interfaces/PageListItem'
 import ImageList from '../ImageList'
+import Link from 'next/link'
 import React from 'react'
 
 export interface Props {
@@ -10,10 +11,12 @@ const PageList = ({ items = [] }: Props) => (
   <ul>
     {items.map(item =>
       <li key={item.id}>
-        <p>{item.date}</p>
-        <p>{item.title}</p>
-        <p>{item.body}</p>
-        <ImageList width={1024} height={576} {...item.img} />
+        <Link href={`developer/${item.id}`}>
+          <a>
+          <h1><strong>{item.title}</strong></h1>
+          <ImageList width={1024} height={576} {...item.img} />
+          </a>
+        </Link>
       </li>
     )}
   </ul>
