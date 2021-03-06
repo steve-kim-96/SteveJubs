@@ -6,17 +6,16 @@ export interface Props {
   items?: PageListItem[],
 }
 
-const PageList = ({ items = [] }: Props) => (
+const DeveloperBlogItems = ({ items = [] }: Props) => (
   <ul>
     {items.map(item =>
       <li key={item.id}>
-        <p>{item.date}</p>
-        <p>{item.title}</p>
-        <p>{item.body}</p>
-        <ImageList width={1024} height={576} {...item.img} />
+          <p>{item.date}</p>
+          <h1><strong>{item.title}</strong></h1>
+          <p>{item.body}</p>
       </li>
     )}
   </ul>
 )
 
-export default PageList
+export default DeveloperBlogItems
