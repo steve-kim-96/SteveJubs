@@ -6,9 +6,8 @@ export interface Props {
   items?: PageListItem[],
 }
 
-const DeveloperBlogItems = ({ items = [] }: Props) => {
-  const router = useRouter()
-  const { id } = router.query
+const BlogItems = ({ items = [] }: Props) => {
+  const { id } = useRouter().query
   return (
     <ul>
       {items.map(item => {
@@ -16,7 +15,7 @@ const DeveloperBlogItems = ({ items = [] }: Props) => {
           ? <li key={item.id}>
             <p>{item.date}</p>
             <h1><strong>{item.title}</strong></h1>
-            <p>{item.body}</p>
+            {item.body}
           </li>
           : null
       }
@@ -25,4 +24,4 @@ const DeveloperBlogItems = ({ items = [] }: Props) => {
   )
 }
 
-export default DeveloperBlogItems
+export default BlogItems
