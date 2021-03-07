@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:css": "tailwind build styles/global.css -o dist/global.css"
   },
   "dependencies": {
     "moment": "^2.29.1",
