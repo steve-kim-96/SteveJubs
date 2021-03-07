@@ -11,18 +11,20 @@ export interface Props {
 const PageList = ({ items = [] }: Props) => {
   const { pathname } = useRouter()
   return (
-  <ul>
-    {items.map(item =>
-      <li key={item.id}>
-        <Link href={`${pathname}/${item.id}`}>
-          <a>
-          <h1><strong>{item.title}</strong></h1>
-          <ImageList width={1024} height={576} {...item.img} />
-          </a>
-        </Link>
-      </li>
-    )}
-  </ul>
+    <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 gap-4 gap-x-4 rounded-md lg:px-6 xl:px-10 lg:mt-14">
+    <ul>
+      {items.map(item =>
+          <li key={item.id}>
+            <Link href={`${pathname}/${item.id}`}>
+              <a>
+                <h1><strong>{item.title}</strong></h1>
+                <ImageList width={1024} height={576} {...item.img} />
+              </a>
+            </Link>
+          </li>
+      )}
+    </ul>
+    </div>
   )
 }
 
