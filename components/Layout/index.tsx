@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
       <title>SteveJubs</title>
     </Head>
     <main>
-      {children}
+        {children}
     </main>
   </>
 )

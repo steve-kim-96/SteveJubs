@@ -4,12 +4,14 @@ import ProjectListItem from '../../lib/data/projectListItem'
 import React from 'react'
 
 const Projects = () => (
-
   <Layout>
-    <h1 className="lg:text-4xl font-semibold mb-2">The works that I've done so far...</h1>
-    <PageList items={ProjectListItem} />
+    <div className='projects'>
+      <h1>
+        The works that I've done so far...
+      </h1>
+      <PageList items={ProjectListItem} />
+    </div>
   </Layout>
-
 )
 
 export default Projects
