@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import React from 'react'
+import SocialMediaLinks from '../components/SocialMediaLinks'
 
 const HomePage = () => (
   <Layout>
@@ -10,6 +11,7 @@ const HomePage = () => (
         programming
       </p>
     </div>
+      <SocialMediaLinks/>
   </Layout>
 )
 
