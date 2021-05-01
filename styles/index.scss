@@ -1,6 +1,10 @@
 @import 'utility';
 @import 'config';
 
+body {
+  height: 100vh;
+}
+
 header {
   text-align: center;
   a {
@@ -22,10 +26,41 @@ main {
   line-height: 2;
 
   h1 {
+    font-family: $h-font;
     color: $body-font-color;
   }
 
   p {
+    font-family: $p-font;
     color: $body-font-color;
+  }
+  a {
+    text-decoration: solid;
+  }
+}
+
+.intro-header {
+  color: $title-font-color;
+  margin-bottom: 50px;
+}
+
+.blog-list ul {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: solid 1px $box-color;
+  text-align: left;
+  box-shadow: 5px 10px ;
+  }
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  a {
+    margin-right: 10px;
   }
 }

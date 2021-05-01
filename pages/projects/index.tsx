@@ -6,7 +6,7 @@ import React from 'react'
 const Projects = () => (
   <Layout>
     <div className='projects'>
-      <h1>
+      <h1 className='intro-header'>
         The works that I've done so far...
       </h1>
       <PageList items={ProjectListItem} />
