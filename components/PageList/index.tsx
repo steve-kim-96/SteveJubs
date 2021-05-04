@@ -15,7 +15,7 @@ const PageList = ({ items = [] }: Props) => {
         {items.map(item =>
           <li key={item.id}>
             <Link href={`${pathname}/${item.id}`}>
-              <h1><a><strong>{item.title}</strong></a></h1>
+              <h1><a><strong>{item.id}. {item.title}</strong></a></h1>
             </Link>
           </li>
         )}
