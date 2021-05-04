@@ -4,14 +4,18 @@ import SocialMediaLinks from '../components/SocialMediaLinks'
 
 const HomePage = () => (
   <Layout>
-    <div className='homepage'>
-      <h1>Hi, I'm Steve</h1>
-      <p>
-        I am a Software Developer, passionate about all things
-        programming
+    <div className='container'>
+      <div className='homepage'>
+        <section className='homepage-text'>
+          <h1>Hi, I'm Steve</h1>
+          <p>
+            I am a Software Developer, passionate about all things
+            programming
       </p>
+        </section>
+        <SocialMediaLinks />
+      </div>
     </div>
-      <SocialMediaLinks/>
   </Layout>
 )
 
