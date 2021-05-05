@@ -2,6 +2,7 @@ interface PageListItem {
   id: number,
   date: string,
   title: string,
+  genre: string,
   img: {
     src: string,
     alt: string
