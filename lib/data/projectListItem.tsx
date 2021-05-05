@@ -6,6 +6,7 @@ const ProjectListItem: PageListItem[] = [
     id: 1,
     date: moment('2021-02-24', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'DevPortfolio',
+    genre: 'projects',
     img: {
       src: '/images/projects/DevPortfolio.png',
       alt: 'DevPortfolio after image'
@@ -25,6 +26,7 @@ const ProjectListItem: PageListItem[] = [
     id: 2,
     date: moment('2021-03-05', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'SteveJubs',
+    genre: 'projects',
     img: {
       src: '/images/projects/SteveJubs.jpg',
       alt: 'Personal website Photo'
@@ -45,6 +47,7 @@ const ProjectListItem: PageListItem[] = [
     id: 3,
     date: moment('2021-03-05', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'Another TODO list???',
+    genre: 'projects',
     img: {
       src: '/images/projects/TODO.jpg',
       alt: 'Personal website Photo'

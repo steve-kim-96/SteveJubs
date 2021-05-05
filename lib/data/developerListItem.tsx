@@ -6,6 +6,7 @@ const DeveloperListItem: PageListItem[] = [
     id: 1,
     date: moment('2020-05-01', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'Humble and curious beginnings',
+    genre: 'developer',
     img: {
       src: '/images/developer/codecademy.jpg',
       alt: 'Developer journey image 1'
@@ -21,6 +22,7 @@ const DeveloperListItem: PageListItem[] = [
     id: 2,
     date: moment('2020-06-10', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'The real learning begins',
+    genre: 'developer',
     img: {
       src: '/images/developer/JavaScript.png',
       alt: 'Developer journey image 2'
