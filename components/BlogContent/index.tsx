@@ -17,8 +17,9 @@ const BlogItems = ({ items = [] }: Props) => {
             ? <li key={item.id}>
               <p>{item.date}</p>
               <h1><strong>{item.title}</strong></h1>
-              {item.body}
               <Image alt={item.img.alt} src={item.img.src} width={570} height={300}/>
+              {item.link ? <a href={item.link}>Click here to view the project</a> : null}
+              {item.body}
             </li>
             : null
         }
