@@ -3,6 +3,7 @@ interface PageListItem {
   date: string,
   title: string,
   genre: string,
+  link?: string,
   img: {
     src: string,
     alt: string
