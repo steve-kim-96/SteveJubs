@@ -10,7 +10,7 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background-color: #687980;
+  background-color: #fea82f;
   height: 6.5%;
   header {
     text-align: center;
@@ -21,6 +21,9 @@ body {
       display: inline-block;
       width: 200px;
       color: aquamarine;
+    }
+    a:hover {
+      color: black;
     }
   }
 }
@@ -52,6 +55,9 @@ main {
         background: none;
         a {
           margin: 0 1.5vw 0 1.5vw;
+        }
+        a:hover {
+          opacity: 0.5;
         }
       }
     }
@@ -100,6 +106,10 @@ main {
       text-align: left;
       list-style-type: none;
     }
+    li:hover {
+      cursor: pointer;
+      opacity: .5;
+    }
   }
 }
 
@@ -115,6 +125,12 @@ main {
 
 .blog-content {
   margin-top: 5vh;
+  a {
+    display: block;
+  }
+  a:hover {
+    opacity: .5;
+  }
 }
 
 //responsive design
