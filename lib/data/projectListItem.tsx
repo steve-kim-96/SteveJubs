@@ -7,13 +7,13 @@ const ProjectListItem: PageListItem[] = [
     date: moment('2021-02-24', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'DevPortfolio',
     genre: 'projects',
+    link: 'https://github.com/harakeke-2021/DevPortfolio',
     img: {
       src: '/images/projects/DevPortfolio.png',
       alt: 'DevPortfolio after image'
     },
     body:
       <>
-        <a href='https://github.com/harakeke-2021/DevPortfolio' target='_blank'>Click here to view the repo</a>
         <p>This is a big group project that was created at the end of the bootcamp. A team of four, I handled the authentication routes and backend APIs</p>
         <p>Nothing fancy, nothing elegant... just some code with a lot of bad smells but learnt a lot and had a good experience. What would I do differently???</p>
         <p>First thing I would do is learn and set up PostgreSQL. Reason? SQL was such a pain to work with... admittedly my SQL knowledge could use a boost in terms of</p>
@@ -48,13 +48,13 @@ const ProjectListItem: PageListItem[] = [
     date: moment('2021-03-05', 'YYYY-MM-DD').format('DD/MM/YYYY'),
     title: 'Another TODO list???',
     genre: 'projects',
+    link: 'https://github.com/harakeke-2021/todo-full-stack/tree/steve',
     img: {
       src: '/images/projects/TODO.jpg',
       alt: 'Personal website Photo'
     },
     body:
       <>
-        <a href='https://github.com/harakeke-2021/todo-full-stack/tree/steve' target='_blank'>Click here to view the repo</a>
         <p>Is it somehow a cliche to make a todo list? Well, at EDA it was an optional exercise but everyone got given an opportunity to create a TODO list</p>
         <p>I thought I'd spend the weekend and some free time at EDA to work on the todo list to get the practice in of building backend APIS, frontend APIS,</p>
         <p>React and Redux practice in. Some testing practice didn't hurt either.</p>
