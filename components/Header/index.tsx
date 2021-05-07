@@ -9,7 +9,7 @@ const Header = () => (
       </Link>
 
       <Link href='/'>
-        <a>HomePage</a>
+        <a>Home</a>
       </Link>
 
       <Link href='/developer'>
