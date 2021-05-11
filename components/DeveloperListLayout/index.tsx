@@ -1,17 +1,17 @@
 import Head from 'next/head'
 import React from 'react'
 
-const BlogListLayout = ({ children }) => (
+const DeveloperListLayout = ({ children }) => (
     <>
       <Head>
         <title>SteveJubs</title>
       </Head>
       <main>
-        <div className='blog-list-page'>
+        <div className='developer-list-page'>
           {children}
         </div>
       </main>
     </>
   )
 
-export default BlogListLayout
+export default DeveloperListLayout

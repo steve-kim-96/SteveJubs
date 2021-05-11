@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import React from 'react'
 import SocialMediaLinks from '../components/SocialMediaLinks'
+import PageNav from '../components/PageNav'
 
 const HomePage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const HomePage = () => (
         </section>
         <SocialMediaLinks />
       </div>
+      <PageNav />
     </div>
   </Layout>
 )
