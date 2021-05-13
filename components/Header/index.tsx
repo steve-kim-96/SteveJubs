@@ -3,21 +3,23 @@ import Link from 'next/link'
 
 const Header = () => (
   <div className='header'>
+    <nav className='ham-nav'>
       <label htmlFor="hamburger">&#9776;</label>
       <input type="checkbox" id="hamburger" />
-    <header>
-      <Link href='/projects'>
-        <a>Projects</a>
-      </Link>
+      <div className='ham-items'>
+        <Link href='/projects'>
+          <a>Projects</a>
+        </Link>
 
-      <Link href='/'>
-        <a>Home</a>
-      </Link>
+        <Link href='/'>
+          <a>Home</a>
+        </Link>
 
-      <Link href='/developer'>
-        <a>Developer</a>
-      </Link>
-    </header>
+        <Link href='/developer'>
+          <a>Developer</a>
+        </Link>
+      </div>
+    </nav>
   </div>
 )
 
