@@ -10,7 +10,7 @@ const PageNav = () => {
         ?
         <div className='right-arrow'>
           <Link href={pathname === '/projects' ? '/' : '/developer'}>
-            <a><img src="/images/landingPage/right-arrow.png" alt="developer page arrow link" /></a>
+            <a>{pathname === '/projects' ? 'Home' : 'developer'}</a>
           </Link>
         </div>
         : null
@@ -19,7 +19,7 @@ const PageNav = () => {
         ?
         <div className='left-arrow'>
           <Link href={pathname === '/developer' ? '/' : '/projects'}>
-            <a><img src="/images/landingPage/right-arrow.png" alt="developer page arrow link" /></a>
+            <a>{pathname === '/developer' ? 'Home' : 'projects'}</a>
           </Link>
         </div>
         : null
