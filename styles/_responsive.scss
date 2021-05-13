@@ -1,0 +1,53 @@
+@media (max-width: $medium-breakpoint) {
+  .blog-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.header label,
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .header label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .ham-items {
+    display: none;
+  }
+
+  .header nav a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  .ham-nav input:checked ~ .ham-items {
+    display: block;
+  }
+  .right-arrow {
+    img {
+      width: 150px;
+    }
+  }
+  .left-arrow {
+    img {
+      width: 150px;
+    }
+  }
+  .developer-list-content {
+    .list-intro {
+      width: auto;
+    }
+    .blog-list {
+      width: auto;
+    }
+  }
+}
