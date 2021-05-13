@@ -1,12 +1,8 @@
 @import 'utility';
 @import 'config';
+@import 'responsive';
 
 //main containers
-//header
-body {
-  height: 100vh;
-  background-color: #02475e;
-}
 
 .header {
   position: sticky;
@@ -63,8 +59,8 @@ main {
     order: 2;
     border: 1px solid #c6ffc1;
     display: flex;
-    width: 45%;
-    height: 60%;
+    width: 35%;
+    height: 50%;
     flex-direction: column;
     justify-content: space-around;
     .social-media-links {
@@ -186,42 +182,5 @@ main {
     &:hover {
       opacity: 0.5;
     }
-  }
-}
-
-//responsive design
-@media (max-width: $medium-breakpoint) {
-  .blog-content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.header label,
-#hamburger {
-  display: none;
-}
-
-@media screen and (max-width: $small-breakpoint) {
-  .header label {
-    display: inline-block;
-    color: white;
-    background: #a02620;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-
-  .ham-items {
-    display: none;
-  }
-
-  .header nav a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-  }
-  .ham-nav input:checked ~ .ham-items { 
-    display: block;
   }
 }

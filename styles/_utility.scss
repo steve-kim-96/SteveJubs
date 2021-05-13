@@ -11,12 +11,17 @@
 .right-arrow {
   order: 3;
   &:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 .left-arrow {
   transform: rotate(180deg);
   &:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
+}
+
+body {
+  height: 100vh;
+  background-color: #02475e;
 }
